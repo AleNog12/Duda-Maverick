@@ -31,10 +31,6 @@
   .button:hover {
     background-color: #9c27b0;
   }
-  #video, #noButton {
-    display: none;
-    margin-top: 20px;
-  }
 </style>
 </head>
 <body>
@@ -42,22 +38,12 @@
 <h2>Quer ser minha namorada?</h2>
 <p>Desde o momento em que te vi, meu mundo se encheu de cores. Você trouxe alegria e sentido para minha vida de uma forma que eu nunca imaginei possível. Cada sorriso seu ilumina meu dia e cada olhar seu aquece meu coração. Quero poder fazer você tão feliz quanto você me faz todos os dias. Então, o que você acha, vamos embarcar nessa aventura juntos?</p>
 
-<button class="button" onclick="showVideo()">Sim, quero!</button>
+<button class="button" onclick="yesAnswer()">Sim, quero!</button>
 <button class="button" onclick="noAnswer()">Não quero</button>
 
-<div id="video">
-  <p>Aqui está um vídeo especial para nós dois:</p>
-  <!-- O 'embed' do vídeo do YouTube -->
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/DM47R2-GIGM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-
-<div id="noButton">
-  <p>Que pena! Aqui está um vídeo para você:</p>
-</div>
-
 <script>
-function showVideo() {
-  document.getElementById('video').style.display = 'block';
+function yesAnswer() {
+  window.location.href = "https://www.youtube.com/embed/DM47R2-GIGM";
 }
 
 function noAnswer() {
